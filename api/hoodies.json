@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "BLACK OVERSIZED HOODIEE",
+        "price": 49.00,
+        "image": "/public/Images/hoodies/1b093e0f497d594bb4d53d7196520844f2294ec4.png"
+    },
+    {
+        "id": 2,
+        "name": "BLACK OVERSIZED HOODIEE",
+        "price": "39.00",
+        "image": "/public/Images/hoodies/4022f77fed1caf41ff006e55af3413cd7a272263.png"
+    },
+    {
+        "id": 3,
+        "name": "BLACK OVERSIZED HOODIEE",
+        "price": 19.00,
+        "image": "/public/Images/hoodies/4983b6f2d76e818baf44981f1e91d8355f1aac06.png"
+    },
+    {
+        "id": 4,
+        "name": "BLACK OVERSIZED HOODIEE",
+        "price": 59.00,
+        "image": "/public/Images/hoodies/85448075f2777ef3743c8453cd6e6cca413ca95f.png"
+    },
+    {
+        "id": 5,
+        "name": "BLACK OVERSIZED HOODIEE",
+        "price": 119.00,
+        "image": "/public/Images/hoodies/042014199194cf3f41f0ea2bcdc3456d6731a4a1.png"
+    },
+    {
+        "id": 6,
+        "name": "BLACK OVERSIZED HOODIEE",
+        "price": 29.00,
+        "image": "/public/Images/hoodies/eb01f5d1c18ab3ead142b6971d3268e10e67215a.png"
+    },
+    {
+        "id": 7,
+        "name": "BLACK OVERSIZED HOODIEE",
+        "price": 29.00,
+        "image": "/public/Images/hoodies/f80b7c3f8f72a9a1ab2201e5a2adfdab7d95cbb9.png"
+    }
+]

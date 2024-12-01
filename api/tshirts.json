@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "BLACK OVERSIZED TEE",
+        "price": 49.00,
+        "image": "/public/Images/t-shirts/0a659d3834f51e63328a409b10c5def3a2704cf5.png"
+    },
+    {
+        "id": 2,
+        "name": "BLACK OVERSIZED TEE",
+        "price": 39.00,
+        "image": "/public/Images/t-shirts/4e151e2d6bfc1501baa66db9dfb12fbac2a0acd0.png"
+    },
+    {
+        "id": 3,
+        "name": "BLACK OVERSIZED TEE",
+        "price": 19.00,
+        "image": "/public/Images/t-shirts/40f78a761414a1f7376c5681ec81394257c87b69.png"
+    },
+    {
+        "id": 4,
+        "name": "BLACK OVERSIZED TEE",
+        "price": 59.00,
+        "image": "/public/Images/t-shirts/98d8ffd00cbf08c86ce1d81bda3884a9a0c923f9.png"
+    },
+    {
+        "id": 5,
+        "name": "BLACK OVERSIZED TEE",
+        "price": 119.00,
+        "image": "/public/Images/t-shirts/132712894632987658957109374.png"
+    },
+    {
+        "id": 6,
+        "name": "BLACK OVERSIZED TEE",
+        "price": 29.00,
+        "image": "/public/Images/t-shirts/fb5999357e7996d838f82890264284529432718d.png"
+    }
+]

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oye Dumbo | Your fav clothing brand</title>
+
+    <link rel="shortcut icon" href="./public/favicon_io/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/components.css">
+
+    <!-- LOCOMOTIVE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section class="login">
+        <div class="container">
+            <i id="close" class="fa-solid fa-xmark"></i>
+            <div class="col1">
+                <img src="/public/Images/white0000.png" alt="">
+            </div>
+            <div class="col2">
+                <div class="formHead">
+                    <h1>Sign in</h1>
+                    <p>Become a member — don't miss out on deals, offers, discounts and bonus vouchers.</p>
+                </div>
+                <div class="formEntries">
+                    <form action="post">
+                        <div class="email">
+                            <label for="email">EMAIL :</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="password">
+                            <label for="password">PASSWORD :</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                        </div>
+
+                        <div class="essentials">
+                            <div class="check">
+                                <input type="checkbox" name="remember" id="remMe">
+                                <label for="remMe"> Remember me</label>
+                            </div>
+
+                            <a href="#">
+                                <h2>Forgot password?</h2>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="formButtons">  
+                    <button class="signin">
+                        <h2>SIGN IN</h2>
+                    </button>
+                    <button>
+                        <h2>BECOME A MEMBER</h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="root" data-scroll-container>
+
+        
+        <section class="saleBar">
+            <div class="container">
+                <div class="wrapper">
+                    <h2>
+                        SALE-BAR
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="navbar" data-scroll>
+            <div class="wrapper">
+                <div class="navLeft">
+                    <div class="logo">
+                        <img src="./Images/Logo/Dumbol-A Clothing Brand2.png" alt="brand-logo">
+                    </div>
+                    <div class="nav-items">
+                        <a class="nav-bg-anim" href="#">NEW ARRIVALS</a>
+                        <a class="nav-bg-anim" href="#teeshirts">TEE-SHIRTS</a>
+                        <a class="nav-bg-anim" href="#hoodiesCol">HOODIES</a>
+                        <a class="nav-bg-anim" href="#">CONTACT US</a>
+                    </div>
+                </div>
+                <div class="navRight">
+                    <div class="nav-items">
+                        <a id="loginBtn" class="nav-bg-anim" href="#">LOGIN</a>
+                        <div class="cartBox">
+                            <a class="cart" href="#">
+                                <p>CART</p>
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </a>
+                            <a class="cartCount" href="#">
+                                <p>4</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero" data-scroll data-scroll-speed="-2.5">
+            <div class="container">
+                <div>
+                    <h1 class="left">LOREM IPSUM DOLOR {*} LOREM IPSUM AMET, <span>DOLOR</span> SIT AMET DOLOR SIT LOREM IPSUM DOLOR</h1>
+                    <h1 class="right">CONSECTETUR CONTSIU ADIPISCING ELIT CONTSIU CONSECTETUR CONTSIU ADIPISCING ELIT CONTSIU.</h1>
+                    <h1 class="left">A MI QUIS CALLIS INTEGER <Span>[2024]</Span> CALLIS A  MI QUIS CALLIS A MI QUIS </h1>
+                    <h1 class="right">FAUCIBUS. AM SI RETUNS FAUCIBUS. AM SI RETUNS <span>(22.1 *)</span> AM SI RETUNS.</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="brandMarquee" data-scroll data-scroll-speed="1">
+            <div class="container">
+                <!-- <h3 class="brand-float">
+                    <span>OYE</span>DUMBO
+                </h3> -->
+                <h1 class="brand-name">
+                    <p><span>OYE</span>DUMBO</p>
+                </h1>
+            </div>
+        </section>
+
+        <section class="page-3">
+
+        </section>
+
+        <section class="saleMarquee" data-scroll data-scroll-speed="1">
+            <div class="container">
+                <!-- <h3 class="brand-float">
+                    <span>OYE</span>DUMBO
+                </h3> -->
+                <h1 class="sale-name">
+                    <p><span>BEST</span>SELLERS</p>
+                </h1>
+            </div>
+        </section>
+
+        <section class="collection">
+            <div id="teeshirts" class="teeshirts">
+                <div class="tsCont">
+                    <div class="ts-head">
+                        <!-- <h1 class="backdrop">TEE-SHIRTS</h1> -->
+                        <div class="head-cont">
+                            <div class="head-incont">
+                                <h1>
+                                    BEST COLLECTIBLES <br>FROM DUMBO (*24//).
+                                </h1>
+                                <h4>
+                                    BEST COLLECTIBLES FROM DUMBO (*24//).
+                                </h4>
+                            </div>
+                        </div>
+                        <a class="viewcolbtn-a" href="#">
+                            <div class="viewcolBtn">
+                                <i class="fa-solid fa-arrow-down-long fa-xs" style="color: #000;"></i>
+                                <h3>VIEW COLLECTION</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="tshirt" class="catalogue productContainer">
+                        <!-- dynamic card -->
+                    </div>
+                </div>
+            </div>
+            <div id="hoodiesCol" class="hoodies">
+                <div class="tsCont">
+                    <div style="background-image: url('/public/Images/HOODIES.png');
+                    background-size: contain;
+                    background-position: 50%;
+                    background-repeat: no-repeat;" class="ts-head">
+                        <!-- <h1 class="backdrop">TEE-SHIRTS</h1> -->
+                        <div class="head-cont">
+                            <div class="head-incont">
+                                <h1>
+                                    BEST COLLECTIBLES<br>FROM DUMBO (*24//).
+                                </h1>
+                                <h4>
+                                    BEST COLLECTIBLES FROM DUMBO (*24//).
+                                </h4>
+                            </div>
+                        </div>
+                        <a class="viewcolbtn-a" href="#">
+                            <div class="viewcolBtn">
+                                <i class="fa-solid fa-arrow-down-long fa-xs" style="color: #000;"></i>
+                                <h3>VIEW COLLECTION</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="hoodies" class="catalogue productContainerH">
+                        <!-- dynamic hoodie collection -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <template id="productTemplate">
+          <div class="productCard" id="cardValue">
+              <article class="information [card]">
+                  <div class="productLink">
+                      <div class="productActions">
+                          <button class="productActionsButton">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                          </button> 
+                      </div>
+                      <div class="productInfo">
+                          <div class="productInfo-wrap">
+                              <h2 class="productName">
+                                  <!-- BLACK OVERSIZED TEE -->
+                              </h2>
+                              <h2 class="productPrice">
+                                  <!-- $49.00 -->
+                              </h2>
+                          </div>
+                      </div>
+                      <img class="productImage" src="" alt="">
+                  </div>
+              </article>
+          </div>
+       </template>
+
+        <section class="message">
+            <div class="container">
+                <h1 class="msganim"><span class="msgHeadline">FIND YOUR TRUE STYLE.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit metus in eros laoreet eleifend. Quisque ac tincidunt augue. Vivamus ullamcorper, diam blandit varius porta.</h1>
+            </div>
+
+            <div class="separator">
+                <div class="line"></div>
+                <div class="circle"></div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <footer>
+                <div class="container">
+                    <div class="brandLogo">
+                        <img src="./Images/Logo/Dumbo-A-Clothing-Brand-Logo-original.png" alt="Dumbo-a-clothing-brand">
+                    </div>
+                    <div class="footerItems">
+                        <div class="connect">
+                            <h1>LET'S GET<br>CONNECTED.</h1>
+                            <div class="mailbox">
+                                <!-- mailbox icon -->
+                                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                                <input type="email" name="email" id="emailInp" placeholder="ENTER YOUR EMAIL">
+                                <a href="mailto:"><i class="fa-solid fa-arrow-left-long fa-flip-horizontal fa-xs" style="color: #ffffff;"></i></a>
+                            </div>
+                            <h3 class="saledisc">SIGN UP FOR OUT NEWSLETTER AND RECIEVE <span>10% OFF.</span></h3>
+                        </div>
+                        <div class="navigations">
+                            <div class="navCols quicklinks">
+                                <h3 class="list-head">QUICK LINKS :</h3>
+                                <div class="list-items">
+                                    <a href="#"><p>HOME</p></a>
+                                    <a href="#"><p>ABOUT US</p></a>
+                                    <a href="#"><p>CATALOG</p></a>
+                                    <a href="#"><p>CONTACT US</p></a>
+                                </div>
+                            </div>
+                            <div class="navCols policies">
+                                <h3 class="list-head">POLICIES :</h3>
+                                <div class="list-items">
+                                    <a href="#"><p>SEARCH</p></a>
+                                    <a href="#"><p>REFUND POLICY</p></a>
+                                    <a href="#"><p>PRIVACY POLICY</p></a>
+                                    <a href="#"><p>TERMS OF SERVICE</p></a>
+                                    <a href="#"><p>TERMS OF SERVICE</p></a>
+                                    <a href="#"><p>SHIPPING POLICY</p></a>
+                                    <a href="#"><p>CONTACT INFORMATION</p></a>
+                                </div>
+                            </div>
+                            <div class="navCols socials">
+                                <h3 class="list-head">SOCIALS :</h3>
+                                <div class="list-items">
+                                    <a href="https://www.instagram.com/oyeedumbo/"><p>INSTAGRAM</p></a>
+                                    <a href="#"><p>FACEBOOK</p></a>
+                                    <a href="#"><p>WHATSAPP</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <section class="crt">
+            <h1>© DUMBO 2024</h1>
+        </section>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="/src/app.js"></script>
+    <script src="/src/login.js"></script>
+
+
+</body>
+</html>
