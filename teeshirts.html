@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oye Dumbo | Your fav clothing brand</title>
+
+    <link rel="shortcut icon" href="./public/favicon_io/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/components.css">
+
+    <!-- LOCOMOTIVE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section class="login">
+        <div class="container">
+            <i id="close" class="fa-solid fa-xmark"></i>
+            <div class="col1">
+                <img src="/public/Images/white0000.png" alt="">
+            </div>
+            <div class="col2">
+                <div class="formHead">
+                    <h1>Sign in</h1>
+                    <p>Become a member — don't miss out on deals, offers, discounts and bonus vouchers.</p>
+                </div>
+                <div class="formEntries">
+                    <form action="post">
+                        <div class="email">
+                            <label for="email">EMAIL :</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="password">
+                            <label for="password">PASSWORD :</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                        </div>
+
+                        <div class="essentials">
+                            <div class="check">
+                                <input type="checkbox" name="remember" id="remMe">
+                                <label for="remMe"> Remember me</label>
+                            </div>
+
+                            <a href="#">
+                                <h2>Forgot password?</h2>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="formButtons">  
+                    <button class="signin">
+                        <h2>SIGN IN</h2>
+                    </button>
+                    <button>
+                        <h2>BECOME A MEMBER</h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="root" data-scroll-container>
+
+        
+        <section class="saleBar">
+            <div class="container">
+                <div class="wrapper">
+                    <h2>
+                        SALE-BAR
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="navbar" data-scroll>
+            <div class="wrapper">
+                <div class="navLeft">
+                    <a href="/index.html">
+                        <div class="logo">
+                            <img src="./Images/Logo/Dumbol-A Clothing Brand2.png" alt="brand-logo">
+                        </div>
+                    </a>
+                    <div class="nav-items">
+                        <a class="nav-bg-anim" href="#">NEW ARRIVALS</a>
+                        <a class="nav-bg-anim" href="#teeshirts">TEE-SHIRTS</a>
+                        <a class="nav-bg-anim" href="#hoodiesCol">HOODIES</a>
+                        <a class="nav-bg-anim" href="#">CONTACT US</a>
+                    </div>
+                </div>
+                <div class="navRight">
+                    <div class="nav-items">
+                        <a id="loginBtn" class="nav-bg-anim" href="#">LOGIN</a>
+                        <div class="cartBox">
+                            <a class="cart" href="#">
+                                <p>CART</p>
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </a>
+                            <a class="cartCount" href="#">
+                                <p>4</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <footer>
+                <div class="container">
+                    <div class="brandLogo">
+                        <img src="./Images/Logo/Dumbo-A-Clothing-Brand-Logo-original.png" alt="Dumbo-a-clothing-brand">
+                    </div>
+                    <div class="footerItems">
+                        <div class="connect">
+                            <h1>LET'S GET<br>CONNECTED.</h1>
+                            <div class="mailbox">
+                                <!-- mailbox icon -->
+                                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                                <input type="email" name="email" id="emailInp" placeholder="ENTER YOUR EMAIL">
+                                <a href="mailto:"><i class="fa-solid fa-arrow-left-long fa-flip-horizontal fa-xs" style="color: #ffffff;"></i></a>
+                            </div>
+                            <h3 class="saledisc">SIGN UP FOR OUT NEWSLETTER AND RECIEVE <span>10% OFF.</span></h3>
+                        </div>
+                        <div class="navigations">
+                            <div class="navCols quicklinks">
+                                <h3 class="list-head">QUICK LINKS :</h3>
+                                <div class="list-items">
+                                    <a href="#"><p>HOME</p></a>
+                                    <a href="#"><p>ABOUT US</p></a>
+                                    <a href="#"><p>CATALOG</p></a>
+                                    <a href="#"><p>CONTACT US</p></a>
+                                </div>
+                            </div>
+                            <div class="navCols policies">
+                                <h3 class="list-head">POLICIES :</h3>
+                                <div class="list-items">
+                                    <a href="#"><p>SEARCH</p></a>
+                                    <a href="#"><p>REFUND POLICY</p></a>
+                                    <a href="#"><p>PRIVACY POLICY</p></a>
+                                    <a href="#"><p>TERMS OF SERVICE</p></a>
+                                    <a href="#"><p>TERMS OF SERVICE</p></a>
+                                    <a href="#"><p>SHIPPING POLICY</p></a>
+                                    <a href="#"><p>CONTACT INFORMATION</p></a>
+                                </div>
+                            </div>
+                            <div class="navCols socials">
+                                <h3 class="list-head">SOCIALS :</h3>
+                                <div class="list-items">
+                                    <a href="https://www.instagram.com/oyeedumbo/"><p>INSTAGRAM</p></a>
+                                    <a href="#"><p>FACEBOOK</p></a>
+                                    <a href="#"><p>WHATSAPP</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <section class="crt">
+            <h1>© DUMBO 2024</h1>
+        </section>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="/src/app.js"></script>
+    <script src="/src/login.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html, body {
+    background-color: #030303;
+    color: #FFFF;
+    width: 100%;
+    height: 100%;
+    font-family: 'bebas neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/*-------------------------------- login --------------------------------*/
+
+
+#close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.login {
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    background-color: #03030390;
+    backdrop-filter: blur(10px);
+
+}
+
+.login .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f74;
+    backdrop-filter: blur(200px);
+    border: 1px solid #373737;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 20px;
+    padding: 5rem 7rem;
+    gap: 2rem;
+}
+
+.col1, .col2 {
+    width: 50%;
+}
+
+.col1 img {
+    width: 25vw;
+}
+
+.formHead {
+    /* border: 1px solid white; */
+    margin-bottom: 1rem;
+}
+
+.formHead h1, .formHead p {
+    font-weight: 400;
+}
+
+.formHead h1 {
+    font-size: 2rem;
+}
+
+.formHead p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #5b5b5b;
+}
+
+.formEntries form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.formEntries form input {
+    border: none;
+    outline: none;
+    background-color: #0f0f0f;
+    padding: 0.8rem 0.8rem;
+    margin-top: 0.3rem;
+    border: 1px solid #202020;
+    font-family: 'bebas neue', sans-serif;
+    border-radius: 4px;
+
+}
+
+.formEntries form input:focus {
+    color: rgb(171, 171, 171);
+    outline: none;
+    border: 1px solid #FFD500;
+    transition: 0.5s all ease;
+    font-family: 'bebas neue', sans-serif;
+}
+
+.email, .password {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.essentials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+    /* font-family: 'courier sans', sans-serif; */
+}
+
+.essentials .check label, .essentials h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #858585;
+}
+
+.formButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.formButtons button {
+    width: 100%;
+    padding: 0.6rem 0;
+    font-family: 'outfit', sans-serif;
+    font-size: 0.6rem;
+    background-color: #FFFF;
+    border: none;
+    border-radius: 2px;
+
+}
+
+.signin {
+    position: relative;
+    overflow: hidden;
+}
+
+.signin:hover {
+    cursor: pointer;
+    box-shadow: rgba(145, 145, 145, 0.725) 1.95px 1.95px 0.6px;
+}
+
+.signin h2 {
+    z-index: 9;
+    position: relative;
+}
+
+.formButtons button:nth-child(2) {
+    background-color: #121212;
+    border: 1px solid #73737343;
+    color: #FFF;
+
+}
+
+/*-------------------------------- login --------------------------------*/
+
+
+
+/*-------------------------------- size selector --------------------------------*/
+
+#sizeSelectCart {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sizeSelectCart .container {
+    height: 550px;
+    width: 450px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sizeSelectCart .wrapper {
+    width: 90%;
+    height: 90%;
+}
+
+.prodDetails, .prodSizeLabel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*-------------------------------- size selector --------------------------------*/
