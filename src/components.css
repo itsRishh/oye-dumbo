@@ -35,6 +35,9 @@ a {
 
 .login {
     visibility: hidden;
+    opacity: 0; /* Start with fully transparent */
+    transform: scale(0.9); /* Slightly shrink it */
+    transition: opacity 0.3s ease, transform 0.3s ease;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -44,7 +47,14 @@ a {
     z-index: 10;
     background-color: #03030390;
     backdrop-filter: blur(10px);
-
+    transition: 0.3s all cubic-bezier(0.19, 1, 0.22, 1);
+}
+  
+/* When visible */  
+.login.visible {
+    visibility: visible;
+    opacity: 1; /* Fully opaque */
+    transform: scale(1); /* Original size */
 }
 
 .login .container {
@@ -58,21 +68,26 @@ a {
     border-right: none;
     border-bottom: none;
     border-radius: 20px;
-    padding: 5rem 7rem;
+    margin: 5rem 7rem;
     gap: 2rem;
 }
 
 .col1, .col2 {
-    width: 50%;
+    width: 100%;
 }
 
 .col1 img {
-    width: 25vw;
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+}
+
+.col2 {
+    margin: 0 5rem 0 2rem;
 }
 
 .formHead {
     /* border: 1px solid white; */
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .formHead h1, .formHead p {
@@ -85,7 +100,9 @@ a {
 
 .formHead p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /* font-family: 'outfit', sans-serif; */
     color: #5b5b5b;
 }
 
@@ -110,6 +127,10 @@ a {
 
 }
 
+.formEntries form input::placeholder {
+    letter-spacing: 2px;
+}
+
 .formEntries form input:focus {
     color: rgb(171, 171, 171);
     outline: none;
@@ -124,19 +145,25 @@ a {
     width: 100%;
 }
 
+.email label, .password label {
+    font-size: 24px;
+}
+
 .essentials {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-top: 0.2rem;
     margin-bottom: 1rem;
     /* font-family: 'courier sans', sans-serif; */
 }
 
 .essentials .check label, .essentials h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: #858585;
+    letter-spacing: 1px;
 }
 
 .formButtons {

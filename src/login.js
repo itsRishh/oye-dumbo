@@ -3,9 +3,9 @@ const loginCard = document.querySelector(".login");
 const cross = document.getElementById("close");
 
 login.addEventListener("click", function() {
-  loginCard.style.visibility = "visible";
+  loginCard.classList.add("visible");
 })
 
 cross.addEventListener("click", function() {
-  loginCard.style.visibility = "hidden";
+  loginCard.classList.remove("visible");
 })
