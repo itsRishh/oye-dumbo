@@ -516,14 +516,26 @@ a {
 
 /*--------------------------message--------------------------*/
 
+.word {
+  opacity: 0.6; /* Default faded appearance */
+}
+
 .message {
   padding: 6rem 7rem 0rem;
-  width: 100vw;
+  max-width: 100vw;
+}
+
+.message .container {
+  max-width: 100vw;
+
 }
 
 .msgHeadline {
   display: inline-block;
   color: #FFF;
+  font-size: 6.5vw;
+  line-height: 1;
+  font-weight: 400;
 }
 
 .message h1 {
@@ -533,8 +545,9 @@ a {
   color: #646464;
 }
 
-.msganim p {
-  display: block;
+.msganim {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .separator {

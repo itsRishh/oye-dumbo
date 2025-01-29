@@ -124,7 +124,7 @@ a {
     border: 1px solid #202020;
     font-family: 'bebas neue', sans-serif;
     border-radius: 4px;
-
+    letter-spacing: 2px;
 }
 
 .formEntries form input::placeholder {

@@ -105,12 +105,14 @@ function catalogue() {
     ease: "power1.in",
     scrollTrigger: {
       trigger: "#tshirt",
-      scroller: "[data-scroll-container]", // The main scrolling container
-      start: "top top", // Animation starts when the element enters the viewport
-      end: "200% top", // Adjust the end to ensure the element is fully animated
-      scrub: 0.5, // Make the animation smoother when scrolling
-      pin: true, // Keeps the section pinned
+      scroller: "[data-scroll-container]", 
+      start: "top top", 
+      end: "200% top", 
+      scrub: 0.5, 
+      pin: true,
       anticipatePin: 1,
+      pinReparent: true,
+      invalidateOnRefresh: true, 
     },
   });
 }
@@ -121,15 +123,70 @@ function catalogueH() {
     ease: "power1.in",
     scrollTrigger: {
       trigger: "#hoodies",
-      scroller: "[data-scroll-container]", // The main scrolling container
-      start: "top top", // Animation starts when the element enters the viewport
-      end: "bottom top", // Adjust the end to ensure the element is fully animated
-      scrub: 1, // Make the animation smoother when scrolling
-      pin: true, // Keeps the section pinned
+      scroller: "[data-scroll-container]", 
+      start: "top top", 
+      end: "100% top", 
+      scrub: 1, 
+      pin: true,
+      pinReparent: true,
+      invalidateOnRefresh: true, 
     },
   });
 }
 
+function breakText() {
+  var h1 = document.querySelector(".msganim");
+  var h1text = h1.textContent;
+  var splittedText = h1text.split(" ");
+
+  var parts = "";
+
+  splittedText.forEach(function (elem) {
+    parts += `<span class="word">${elem}</span>&nbsp;`;
+  });
+  // console.log(parts)
+
+  h1.innerHTML = parts;
+}
+
+breakText();
+
+
+const words = document.querySelectorAll(".msganim span");
+console.log(words);
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".message",
+    scroller: "[data-scroll-container]",
+    start: "5% top", 
+    end: "105% top",
+    scrub: 0.5,
+    // pin: true,
+    // anticipatePin: 1,
+    // pinReparent: true,
+    // markers: true,
+  }
+})
+.fromTo(
+  ".msganim .word",
+  { opacity: 0.3 }, // Initial faded state
+  {
+    opacity: 1, // Fully visible state
+    color: "white", // Highlighted color
+    stagger: 0.3, // Animate one word at a time
+    duration: 0.5,
+  }
+);
+
+
+
+
+
+
+
+
+// CALLING ALL THE FUNCTIONS HERE
 catalogue();
 catalogueH();
 heroAnim();     
@@ -140,31 +197,3 @@ marquee();
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
-// function breakText() {
-//   var h1 = document.querySelector(".msganim");
-//   var h1text = h1.textContent;
-//   var splittedText = h1text.split(" ");
-
-//   var parts = "";
-
-//   splittedText.forEach(function (elem) {
-//     parts += `<span>${elem}</span>`;
-//   });
-
-//   h1.innerHTML = parts;
-// }
-
-// // function catalogue() {
-// //   gsap.to("#tshirt", {
-// //     x: -1200,
-// //     scrollTrigger:{
-// //       trigger: "#tshirt",
-// //       scroller: "[data-scroll-container]",
-// //       end: "200% 0%",
-// //       ease: Power2,
-// //       pin: true,
-// //       scrub: 5,
-// //       markers: "True"
-// //     }
-// //   })
-// // }
